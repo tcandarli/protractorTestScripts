@@ -40,7 +40,7 @@ describe('Selenium Locators', function () {
         browser.sleep(4000);
     });
 
-    it('by.className Locator Example', function () {
+    fit('by.className Locator Example', function () {
         browser.waitForAngularEnabled(false);
         browser.get('https://skyid.sky.com/signup');
         element(by.className('page-header-two')).getText()
@@ -54,18 +54,11 @@ describe('Selenium Locators', function () {
         browser.sleep(4000);
     });
 
-    it('By className Locator example for Facebook', function () {
+    it('By tagName Locator Example', function () {
         browser.waitForAngularEnabled(false);
-        broswer.get('https://facebook.com');
-        browser.sleep(3000);
-        element(by.className(''));
-
-    fit('By tagName Locator Example', function() {
-
-        
-    })    
-
+        browser.get('https://skyid.sky.com/signup');
+        element(by.tagName('button')).click();
+        broswer.sleep(10000);
     });
-
 
 });
