@@ -117,7 +117,7 @@ describe('Keyboard and Mouse Action Suite', () => {
     });
 
     // 3rd party drag and drop solution
-    fit('Drag and drop method', () => {
+    it('Drag and drop method', () => {
         var dragAndDrop = require('html-dnd').code;
 
         browser.waitForAngularEnabled(false);
@@ -127,4 +127,37 @@ describe('Keyboard and Mouse Action Suite', () => {
         browser.executeScript(dragAndDrop, element(by.id('column-a')), element(by.id('column-b')), 0, 0);
         browser.sleep(5000);
     });
+
+    // Scroll Down to an element
+    it('Scroll down to an element', () => {
+        browser.get('https://www.bhtp.com/');
+        browser.sleep(3000);
+        browser.executeScript("argutments[0].scrollIntoView();", element(by.linkText("START A CLAIM")))
+            .then(function () {
+                browser.sleep(3000);
+                element(by.linkText("START A CLAIM")).click();
+
+            });
+    });
+
+    // Scrolling down to the end of the page
+    it('Scroll down to an element', () => {
+        browser.get('https://www.bhtp.com/');
+        browser.sleep(3000);
+        browser.executeScript("window.scrollTo(0,document.body.scrollHeight")
+            .then(function () {
+                browser.sleep(3000);
+                element(by.linkText("START A CLAIM")).click();
+
+            });
+    });
+    // JavaScript click
+    fit('Scroll down to an element', () => {
+        browser.get('https://www.bhtp.com/');
+        browser.sleep(3000);
+        browser.executeScript("arguments[0].click()",element(by.linkText("START A CLAIM")));
+        browser.sleep(3000);
+    });
+
+
 });
