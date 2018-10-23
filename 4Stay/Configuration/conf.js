@@ -9,7 +9,7 @@ exports.config = {
         browserName: 'chrome'
     },
 
-    specs: ['../Tests/4StaySimple.spec.js'],
+    specs: ['../Tests/SignUp.spec.js'],
     onPrepare: function () {
         browser.driver.manage().window().maximize();
         jasmine.getEnv().addReporter(new SpecReporter({
