@@ -11,7 +11,7 @@ exports.config = {
 
     specs: ['../Tests/SignUp.spec.js'],
     onPrepare: function () {
-        browser.driver.manage().window().maximize();
+        //browser.driver.manage().window().maximize();
         jasmine.getEnv().addReporter(new SpecReporter({
             displayFailuresSummary: true,
             displayFailuredSpec: true,
