@@ -1,0 +1,43 @@
+{
+    "customers": [{
+            "firstName": "Blaise",
+            "lastName": "Pascal",
+            "email": "bpascal6@gmail.com",
+            "password": "pass1234",
+            "occupation": "Automation Tester",
+            "phone":"2015551425",
+            "about":"Tester",
+            "yearOfBirth":"1990"
+        },
+        {
+            "firstName": "Johannes",
+            "lastName": "Kepler",
+            "email": "jkepler7@gmail.com",
+            "password": "pass1234",
+            "occupation": "SDET",
+            "phone":"2015551416",
+            "about":"QA",
+            "yearOfBirth":"1980"
+        },
+        {
+            "firstName": "Edmond",
+            "lastName": "Halley",
+            "email": "ehalley14@gmail.com",
+            "password": "pass1234",
+            "occupation": "Automation Tester",
+            "phone":"2015551427",
+            "about":"Test Engineer",
+            "yearOfBirth":"1985"
+        },
+        {
+            "firstName": "Melissa",
+            "lastName": "Franklin",
+            "email": "mfrank8@gmail.com",
+            "password": "pass1234",
+            "occupation": "Automation Tester",
+            "phone":"2015551419",
+            "about":"SDET",
+            "yearOfBirth":"1985"
+        }
+    ]
+}
