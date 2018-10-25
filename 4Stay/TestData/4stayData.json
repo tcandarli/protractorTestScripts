@@ -1,0 +1,16 @@
+{
+    "appData":{
+        "MainSearchBoxPlaceHolder":"Where are you going? (type your city, college, or metro station)",
+        "SecondSearchBoxPlaceHolder":"Type to search"
+    },
+    "places":{
+        "city1":"Austin",
+        "city2":"New York"
+    },
+    "credentials":{
+        "email":"softwareengineerintest1@gmail.com",
+        "password":"Sdet123.",
+        "wrongpass":"Sdet123"
+    }
+
+}

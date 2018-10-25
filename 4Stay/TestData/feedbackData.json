@@ -1,0 +1,19 @@
+{
+    "feedbackNegativeTestData":{
+        "fname":"Cyberteksans",
+        "email":"gg@t",
+        "messageText":"My email is invalid"
+    },
+    "feedbackPositiveTestData":{
+        "fname":"Cyberteksans",
+        "email":"gcyberg@gmail.com",
+        "messageText":"Too many bugs in web application, should be revised and tested by quality SDET"
+    },
+
+    "locators":{
+        "feedbackPage":{
+            "sendMessageButton":".btn.btn-signup"
+        }
+    }
+
+}
